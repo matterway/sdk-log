@@ -1,0 +1,19 @@
+{
+  "exclude": ["node_modules", "**/*.test.ts", "**/__tests__", "lib"],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "paths": {
+      "@matterway/sdk-*": ["./packages/*/"]
+    }
+  }
+}

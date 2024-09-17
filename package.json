@@ -1,0 +1,21 @@
+{
+  "name": "@matterway/sdk-log",
+  "version": "0.1.0-alpha.13",
+  "description": "Logging utiltiies for Matterway Skills",
+  "author": "<dev@matterway.io>",
+  "license": "UNLICENSED",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "build": "rimraf -rf lib/* && tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@matterway/sdk-context": "^0.1.0-alpha.52"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5"
+  }
+}
