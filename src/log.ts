@@ -257,6 +257,12 @@ export function downloadReport() {
   downloadBlob(logBlob, fileName);
 }
 
+/** @experimental */
+export function getJSONreport() {
+  const stringLogs = JSON.stringify(logger.getLogs(), getCircularReplacer());
+  return stringLogs;
+}
+
 /**
  * @experimental
  * Sends the collected logs to the logger API. Returns a promise that resolves to true
